@@ -9,7 +9,7 @@ import datetime
 
 def index(request):
     newsApi = requests.get(
-    url='https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=65b24e0657db4ce8bf435cefeeb688ec')
+    url='https://newsapi.org/v2/top-headlines?country=us&category=business&apiKey=******')
     dump = newsApi.json()
     # dumps the json object into an element
     json_str = json.dumps(dump)
